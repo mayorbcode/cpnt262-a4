@@ -9,7 +9,7 @@ Images from [WallpaperAccess](https://wallpaperaccess.com/)
 
 ## [Github repository](https://github.com/mayorbcode/cpnt262-a4)  
 
-## [Heroku App URL](https://express-gallery.herokuapp.com/)  
+## [Heroku App URL](https://express-gallery-assignment.herokuapp.com/)  
 
 ## Objectives  
 &nbsp;&nbsp;The purpose of this project is to create a light-weight gallery website for a potential client.
