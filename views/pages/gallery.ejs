@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&display=swap" rel="stylesheet"> 
+  <!-- css link -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font swesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- Javascript link -->
+  <script type="module" src="js/client.js"></script>
+</head>
+<body class=<%= current %>>
+  <div class="gallery-wrapper">
+    <!-- Navigation -->
+    <%- include('../partials/nav'); %>
+    <!-- Header -->
+    <%- include('../partials/header'); %>
+    <main class="gallery">
+      <!-- Gallery will go here -->
+    </main>
+    <!-- Footer -->
+    <%- include('../partials/footer'); %>
+  </div>
+</body>
+</html>

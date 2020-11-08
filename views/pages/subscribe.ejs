@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&display=swap" rel="stylesheet"> 
+  <!-- css link -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font swesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- Javascript link -->
+  <script type="module" src="js/client.js"></script>
+</head>
+<body class=<%= current %>>
+  <div class="subscribe-wrapper">
+    <!-- Navigation -->
+    <%- include('../partials/nav'); %>
+    <!-- Header -->
+    <%- include('../partials/header'); %>
+    <main class="form-wrapper">
+      <form action="/users" method="post" class="form">
+        <fieldset>
+          <legend>Subscribe</legend>
+          <p>
+            <label for="uname">Name: <abbr title="required" aria-label="required"><span class="required">*</span></abbr>
+            </label>
+            <input id="uname" type="text" name="usersName" placeholder="What is your name?" required>
+          </p>
+          <p>
+          <label for="email">Email:<abbr title="required" aria-label="required"><span class="required">*</span></abbr>
+          </label> 
+          <input type="email" id="email" name="email"  placeholder="How do we contact you?" required>
+          </p>
+          <ul class="check-box">
+            <li><input type="checkbox" id="promos" name="promoEmails" value="yes">
+            <label for="promos">I would like to recieve promotional emails</label>
+            </li>
+          </ul>
+          <button class="subscribe" type="submit">Subscribe</button>
+        </fieldset>
+      </form>
+    </main>
+    <!-- Footer -->
+    <%- include('../partials/footer'); %>
+  </div>
+</body>
+</html>

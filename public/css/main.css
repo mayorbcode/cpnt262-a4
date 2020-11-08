@@ -1,0 +1,454 @@
+/* Resets */
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Google Fonts */
+/* @import method doesnt seem to be working, will revisit this later */
+/* @import url("https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans&display=swap"); */
+
+body {
+  font-family: 'Josefin Sans', helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+  font-family: 'Cardo', helvetica, sans-serif;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  background-color: lightgrey;
+
+  border-bottom: 1px solid grey;
+
+  min-height: 7vh;
+}
+
+.svg {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  margin: auto auto auto 1rem;
+  gap: .35rem;
+}
+
+.logo .far {
+  /* Move icon up a little */
+  margin-bottom: 6px;  
+}
+
+.logo * {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+
+  gap: 1rem;
+  margin: auto 2rem auto auto;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+}
+
+/* Current page nav decoration for all pages*/
+.pg-index nav > a, .pg-index nav li:first-child, .pg-subscribe nav li:nth-child(2), .pg-gallery nav li:nth-child(3) {
+  text-decoration: underline;
+}
+
+/* hero section (for all pages)*/
+.hero {
+  display: flex;
+  min-height: 93vh;
+  
+  background-image: url(../images/stadium.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  margin: auto;
+
+  font-size: 5rem;
+  text-align: center;
+
+  color: black;
+}
+
+/* Main */
+
+/* Main & Bottom text */
+.main-text, .bottom-text {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto 5rem;
+}
+
+.bottom-text {
+  /* Override min-height from above */
+  min-height: 94vh;
+}
+
+/* Text */
+.main-text p, .bottom-text p {
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
+
+  margin: auto 2rem;
+  
+  max-width: 1200px;
+  
+}
+
+
+
+/* Parralax */
+.parallax {
+  height: 35vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  background-image: 
+  linear-gradient(
+    180deg, 
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.2)
+    ), 
+  url(../images/stadium.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: bottom;
+  font-size: 2rem;
+}
+
+.parallax h1 {
+  text-align: center;
+}
+
+
+/* Sticky Footer for all pages*/
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+}
+
+.gallery-wrapper, .subscribe-wrapper {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.page-footer {
+  min-height: 6vh;
+
+  display: flex;
+
+  border-top: 1px solid grey;
+
+  background-color: lightgray;
+}
+
+.page-footer p {
+  margin: auto;
+}
+
+
+
+/* Gallery Page */
+
+/* Gallery and subscribe wrapper */
+.gallery-wrapper, .subscribe-wrapper{
+  background-image:
+  url(../images/plain.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery {
+  display: grid;
+/* Make Responsive */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  justify-items: center;
+  /* Limit the max width */
+  max-width: 100vw;
+  /* Center */
+  margin: auto;
+}
+
+.gallery figure {
+  width: 400px;
+}
+
+/* Gallery Images */
+.gallery img {
+  height: 300px;
+
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.gallery figcaption {
+  /* Center caption */
+  text-align: center;
+}
+
+
+/* Subscribe page */
+.form-wrapper {
+  min-height: 100vh;
+  display: flex;
+}
+
+.form {
+  min-height: 45vh;
+
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 8px;
+
+  background-color: #F7F7F7;
+
+  display: flex;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+fieldset legend {
+  margin: auto;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+fieldset p {
+  display: flex;
+}
+
+fieldset p label {
+  /* Align label (and input) form elements */
+  width: 7ch;
+}
+
+fieldset p input, fieldset ul label {
+  /* Grow into available space */
+  flex: 1;
+  /* no wider than 30ch */
+  max-width: 45ch;
+}
+
+fieldset .required {
+  color: red;
+}
+
+fieldset ul {
+  display: flex;
+
+  margin: 1.5rem 0rem;
+  padding: 0;
+}
+
+fieldset ul input {
+  width: 8.5ch;
+}
+
+fieldset button {
+  margin: 5px auto;
+}
+
+/* Button with hover and active states */
+.subscribe {
+  padding: .3em;
+  border: .5px solid grey;
+  border-radius: .5rem;
+  
+  text-shadow: 0px 1px 0px #283966;
+  color: #FFFFFF;
+  
+  background: linear-gradient(to bottom, #7892c2 4%, #1a1a1a 80%);
+  background-color: #7892c2; 
+
+  font-size: .9rem;
+}
+
+.subscribe:hover {
+  cursor: pointer;
+
+	background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color: #476e9e;
+}
+
+.subscribe:active {
+  /* Move button down on click */
+	position: relative;
+	top: 4px;
+}
+
+/* Responsiveness */
+@media (orientation: portrait) { 
+  /* Hamburger */
+  .svg {
+    display: flex;
+
+    height: 50px;
+    width: 50px;
+
+    margin: 10px 20px;
+  }
+
+  .svg:hover {
+    cursor: pointer;
+  }
+
+  svg.transform .top, svg.transform .bottom {
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  /* So it transitions comming back */
+  .top, .bottom {
+    transition: all 300ms ease;
+  }
+  
+  /* Rotate the two middle bars so they form an x symbol */
+  svg.transform .middle1 {
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform 300ms ease;
+  }
+  
+  svg.transform .middle2 {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform 300ms ease;
+  }
+  
+  /* So they transition in the opposite direction */
+  .middle1, .middle2 {
+    transition: all 300ms ease;
+  }
+
+  /* Navigation */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 35vh;
+
+    transition: min-height .15s ease;
+
+    position: sticky;
+
+    width: 100%;
+  }
+
+  /* Transition back in the opposite direction */
+  .nav {
+    transition: all .15s ease;
+  }
+
+  nav .logo {
+    display: none;
+  }
+
+  nav ul {
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  /* Using multiple selectors here to avoid specificity issues */
+  body nav .menu-toggle {
+    display: block;
+
+    text-align: center;
+
+    padding: 0;
+    margin: auto;
+    visibility: visible;
+    opacity: 1;
+
+    transition: visibility .18s ease;
+  }
+
+  /* Transition back in the opposite direction */
+  nav .menu {
+    display: block;
+    transition: visibility .2s, opacity .1s ease;
+  }
+
+  /* Menu Items */
+  /* I am being 'tedious' with the borders here as i dont want to 'double-up' on borders so some do not appear thicker than others */
+  .nav li, .nav {
+    border-top: 1px solid black;
+    font-size: 20px;
+
+    width: 100vw;
+  }
+
+  /* Last menu item */
+  .nav li:nth-child(3) {
+    border-bottom: 1px solid black;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Page long-form text */
+  .main-text, .bottom-text {
+    /* Center in the x-axis and make a little space between top & bottom sections  */
+    margin: 2rem auto;
+    /* Space between each paragragh */
+    gap: 4rem;
+  }
+
+  .main-text p, .bottom-text p {
+    line-height: 2rem;
+  }
+
+
+
+}
