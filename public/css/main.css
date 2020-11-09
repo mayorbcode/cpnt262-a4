@@ -432,9 +432,13 @@ fieldset button {
     border-bottom: 1px solid black;
   }
 
-  /* Hero */
   .hero h1 {
     font-size: 3.5rem;
+  }
+
+  /* Turn off parralax scrolling  which doesn't workon phones/tablets */
+  .parallax, .hero {
+      background-attachment: scroll;
   }
 
   /* Page long-form text */
@@ -448,7 +452,4 @@ fieldset button {
   .main-text p, .bottom-text p {
     line-height: 2rem;
   }
-
-
-
 }
