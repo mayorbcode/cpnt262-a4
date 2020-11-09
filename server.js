@@ -2,7 +2,7 @@
 const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
-const stadiums = require('./public/js/stadiums');
+const stadiums = require('./stadiums');
 require('dotenv').config();
 
 const app = express();
