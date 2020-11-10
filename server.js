@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Parse all requests for url encoded form data.
 app.use(express.urlencoded({ extended: true }));
 
-// Home/index page end point
+// Home/index page end-point
 app.get('/', (req, res) => {
   res.render('pages/index',
     {
@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     });
 });
 
-// Gallery end point
+// Gallery end-point
 app.get('/gallery', (req, res) => {
   res.render('pages/gallery',
     {
@@ -36,7 +36,7 @@ app.get('/gallery', (req, res) => {
     });
 });
 
-// Subscribe end point
+// Subscribe end-point
 app.get('/subscribe', (req, res) => {
   res.render('pages/subscribe',
     {
@@ -46,14 +46,14 @@ app.get('/subscribe', (req, res) => {
     });
 });
 
+// JSON end-point
+app.get('/api/v0/gallery', (req, res) => {
+  res.json(stadiums);
+});
+
 // Do something with form data
 app.post('/users', (req, res) => {
   res.send(`<p>Thanks, ${req.body.usersName}! We'll send promotional emails to ${req.body.email}.</p>`);
-});
-
-// JSON endpoint
-app.get('/api/v0/gallery', (req, res) => {
-  res.json(stadiums);
 });
 
 // Return 404 when/if file is not found
