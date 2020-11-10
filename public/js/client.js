@@ -14,10 +14,10 @@ fetch(`${window.location.origin}/api/v0/gallery`)
     let output = '';
     stadiums.forEach((stadium) => {
       output += `
-        <figure>
-          <img src="images/${stadium.club}.jpg" alt="${stadium.club} football stadium: ${stadium.name}">
+        <figure class="card">
+          <img src=${stadium.image_path} alt="${stadium.title} football stadium: ${stadium.description}">
           <figcaption>
-            <h2>${stadium.name}</h2>
+            <h2>${stadium.description}</h2>
           </figcaption>
         </figure>
       `;

@@ -1,51 +1,75 @@
 const stadiums = [
   {
-    club: 'acmilan', 
-    name: 'San Siro'
+    title: 'acmilan', 
+    description: 'San Siro',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/acmilan.jpg'
   },
   {
-    club: 'arsenal', 
-    name: 'Emirates Stadium'
+    title: 'arsenal', 
+    description: 'Emirates Stadium',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/arsenal.jpg'
   },
   {
-    club: 'shakhtar', 
-    name: 'Olympiskiy'
+    title: 'shakhtar', 
+    description: 'Olympiskiy',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/shakhtar.jpg'
   },
   {
-    club: 'spurs', 
-    name: 'Tottenham Hotspur Stadium'
+    title: 'spurs', 
+    description: 'Tottenham Hotspur Stadium',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/spurs.jpg'
   },
   {
-    club: 'liverpool', 
-    name: 'Anfield'
+    title: 'liverpool', 
+    description: 'Anfield',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/liverpool.jpg'
   },
   {
-    club: 'juve', 
-    name: 'Allianz Stadium'
+    title: 'juve', 
+    description: 'Allianz Stadium',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/juve.jpg'
   },
   {
-    club: 'madrid', 
-    name: 'Bernabeu'
+    title: 'madrid', 
+    description: 'Bernabeu',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/madrid.jpg'
   },
   {
-    club: 'barca', 
-    name: 'Nou Camp'
+    title: 'barca', 
+    description: 'Nou Camp',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/barca.jpg'
   },
   {
-    club: 'bayern', 
-    name: 'Allianz Arena'
+    title: 'bayern', 
+    description: 'Allianz Arena',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/bayern.jpg'
   },
   {
-    club: 'chelsea', 
-    name: 'Stamford Bridge'
+    title: 'chelsea', 
+    description: 'Stamford Bridge',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/chelsea.jpg'
   },
   {
-    club: 'manutd', 
-    name: 'Old Trafford'
+    title: 'manutd', 
+    description: 'Old Trafford',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/manutd.jpg'
   },
   {
-    club: 'mancity', 
-    name: 'Etihad Stadium'
+    title: 'mancity', 
+    description: 'Etihad Stadium',
+    credit: 'https://wallpaperaccess.com/football-stadium-hd',
+    image_path: 'images/mancity.jpg'
   },
 ]
 

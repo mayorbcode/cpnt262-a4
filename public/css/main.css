@@ -157,6 +157,11 @@ nav ul li {
   font-size: 2rem;
 }
 
+/* Customize position of bottom parallax so it 'settles' on the field */
+.lower {
+  background-position: 50% 80%;
+}
+
 .parallax h1 {
   text-align: center;
 }
@@ -392,7 +397,9 @@ fieldset button {
     display: none;
   }
 
-  nav ul {
+  nav .menu {
+    display: block;
+
     visibility: hidden;
     overflow: hidden;
     opacity: 0;
@@ -414,7 +421,6 @@ fieldset button {
 
   /* Transition back in the opposite direction */
   nav .menu {
-    display: block;
     transition: visibility .2s, opacity .1s ease;
   }
 
@@ -441,15 +447,20 @@ fieldset button {
       background-attachment: scroll;
   }
 
+  .lower {
+    /* Customize position of bottom parralax to center it on the field */
+    background-position: 52% 80%;
+  }
+
   /* Page long-form text */
   .main-text, .bottom-text {
     /* Center in the x-axis and make a little space between top & bottom sections  */
     margin: 2rem auto;
     /* Space between each paragragh */
-    gap: 4rem;
   }
 
   .main-text p, .bottom-text p {
-    line-height: 2rem;
+    line-height: 2.5rem;
+    margin: 2rem 1rem;
   }
 }
