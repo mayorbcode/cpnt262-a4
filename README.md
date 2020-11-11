@@ -17,6 +17,8 @@ Toward that goal, i will:
   - Create a 3-page website served with rendered view engine templates.  
   - Fetch a list of gallery items using fetch().  
   - Serve a JSON GET /api/v0/gallery endpoint using app.get() and a custom module.  
+## License
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)  
 
 ## Comments  
 I REALLY enjoyed putting this one together to be honest. It felt nice combining most of what we learnt in the frontend portion of the course with the backend portion.  
