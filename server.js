@@ -53,7 +53,7 @@ app.get('/api/v0/gallery', (req, res) => {
 
 // Do something with form data
 app.post('/users', (req, res) => {
-  res.send(`<p>Thanks, ${req.body.usersName}! We'll send promotional emails to ${req.body.email}.</p>`);
+  res.send(`<p>Thanks, ${req.body.usersName}! We'll send copies of our newsletters to ${req.body.email}.</p>`);
 });
 
 // Return 404 when/if file is not found
