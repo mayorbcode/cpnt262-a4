@@ -237,13 +237,15 @@ nav ul li {
 
 
 /* Subscribe page */
+
+/* Form */
 .form-wrapper {
   min-height: 100vh;
   display: flex;
 }
 
 .form {
-  min-height: 45vh;
+  min-height: 40vh;
 
   margin: auto;
   border: 1px solid grey;
@@ -261,7 +263,8 @@ fieldset {
 }
 
 fieldset legend {
-  margin: auto;
+  /* Move down a little */
+  margin: 20px auto auto auto;
 
   font-weight: bold;
   font-size: 1.5rem;
