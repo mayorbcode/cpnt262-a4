@@ -1,4 +1,4 @@
-# CPNT-262 Assignment 4 - Express Gallery Website  
+Express Gallery Website  
 by [Patrick Bello](https://github.com/mayorbcode)  
 ## Attributions  
 [Michael Mardel](https://github.com/aggressiveperfector) (Code Review)  
